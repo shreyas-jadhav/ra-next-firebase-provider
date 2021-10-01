@@ -8,10 +8,10 @@ This package is meant to provide [`firebase-admin`](https://firebase.google.com/
 
 That is mainly add support for
 
-- Firebase Users CRUD (Not from the Firestore collections/Realtime Database!)
+- Firebase Users CRUD (Using firebase admin SDK (admin.auth), Not from the Firestore collections/Realtime Database!)
 - Custom Claims CRUD
 - Interact with databases from `firebase-admin` SDK
-- Able to configure a list of allowed Firebase Users which can access the API.
+- Able to configure a list of allowed Firebase Users which can access the `serverSideResolver`, or atleast a allowing to pass a custom function which can determine which users are allowed to access firebase admin sdk things.
 - (Less Priority) A custom Next.js catch all route API route handler which will automatically handle the requests and perform relevant actions.
 
 # Requirements
