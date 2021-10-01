@@ -2,9 +2,9 @@ This package is still in development phase. I appreciate anyone who wants to con
 
 ### THANKS A LOT IN ADVANCE for anyone willing to help!
 
-# About
+# Goal
 
-This package is meant to provide [`firebase-admin`](https://firebase.google.com/docs/admin/setup) SDK functionalities to be available for the [`react-admin`](https://marmelab.com/react-admin/) project. This package will require a server environment. Thats why I choose Next.js, but this should eventually be support on other Node.js server platforms too.
+This package is meant to provide [`firebase-admin`](https://firebase.google.com/docs/admin/setup) SDK functionalities to be available for the [`react-admin`](https://marmelab.com/react-admin/) project. 
 
 That is mainly add support for
 
@@ -13,6 +13,9 @@ That is mainly add support for
 - Interact with databases from `firebase-admin` SDK
 - Able to configure a list of allowed Firebase Users which can access the API.
 - (Less Priority) A custom Next.js catch all route API route handler which will automatically handle the requests and perform relevant actions.
+
+# Requirements
+This package will require a server environment. Thats why I choose Next.js, but this should be eventually be support on other Node.js server platforms too.
 
 # Architecture
 
