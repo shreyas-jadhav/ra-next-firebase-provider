@@ -1,0 +1,31 @@
+{
+  "name": "ra-next-firebase-provider",
+  "version": "1.0.0",
+  "description": "Firebase Provider for React-Admin, uses firebase-admin SDK. Developed to for Next.js but can be supported for any other server environments.",
+  "main": "index.js",
+  "files": ["dist"],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shreyas-jadhav/ra-next-firebase-provider.git"
+  },
+  "keywords": [
+    "react-admin",
+    "nextjs",
+    "firebase-admin"
+  ],
+  "author": "Shreyas Jadhav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreyas-jadhav/ra-next-firebase-provider/issues"
+  },
+  "homepage": "https://github.com/shreyas-jadhav/ra-next-firebase-provider#readme",
+  "dependencies": {
+    "firebase": "^9.1.1",
+    "firebase-admin": "^9.12.0",
+    "ra-core": "^3.18.3"
+  }
+}
