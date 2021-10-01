@@ -12,7 +12,7 @@ interface IUserRecord extends admin.auth.UserRecord {
  */
 class ServerSideResolver {
 
-    async getUser(): Promise<IUserRecord[]> {
+    async getUsers(): Promise<IUserRecord[]> {
         const firebaseUsers =await admin.auth().listUsers();
         let usersData = firebaseUsers.users.map(u => ({ ...u, id: u.uid }));
         return usersData;

@@ -18,11 +18,14 @@ class ClientDataProvider implements DataProvider {
     
     
     async getList<RecordType extends Record = Record>(resource: string, params: GetListParams): Promise<GetListResult<RecordType>> {
-
+        console.log(`getList:`, resource, params)
         const res = await fetch(this._serverUrl + `/${resource}`)
         if (res.ok) {
-            const data: GetListResult<RecordType> = await res.json();
-            return data;
+            const userList = await res.json();
+            return {
+                data: userList,
+                total: userList?.length
+            };
         }
         return Promise.reject();
     }
